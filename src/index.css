@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  color: #222;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#root > div {
+  width: 100%;
+  max-width: 700px;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* FORMULÁRIO */
+
+form {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 11px 15px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* BOTÃO ADICIONAR */
+
+form button {
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #1d4ed8;
+}
+
+/* SEPARADOR */
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 35px 0;
+}
+
+/* LIVROS */
+
+#root > div > div:last-child {
+  width: 100%;
+}
+
+#root > div > div:last-child > div {
+  background: white;
+  padding: 18px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+#root > div > div:last-child > div h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+#root > div > div:last-child > div p {
+  margin: 6px 0;
+}
+
+/* BOTÃO EXCLUIR */
+
+#root > div > div:last-child > div button {
+  background: #dc2626;
+  color: white;
+  margin-top: 10px;
+}
+
+#root > div > div:last-child > div button:hover {
+  background: #b91c1c;
+}
